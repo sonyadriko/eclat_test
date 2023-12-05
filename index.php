@@ -80,6 +80,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Calculate form -->
     <!-- Calculate form -->
     <form action="eclat_result.php" method="post">
+        <label for="min_support">Minimum Support:</label>
+        <input type="text" name="min_support" id="min_support" required>
+
+        <label for="min_confidence">Minimum Confidence:</label>
+        <input type="text" name="min_confidence" id="min_confidence" required>
+
         <button type="submit" name="calculate">Calculate Eclat</button>
     </form>
 </body>
